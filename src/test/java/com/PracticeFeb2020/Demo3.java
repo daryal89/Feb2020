@@ -6,7 +6,7 @@ public class Demo3 {
 
 	@Test
 	public void test3(){
-		System.out.println("Selenium code added by dhruba Aryal");
+		System.out.println("Selenium code added by dhruba Aryal---3");
 
 	}
 

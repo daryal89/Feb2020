@@ -5,7 +5,7 @@ public class Demo2 {
 
 	@Test
 	public void test2() {
-		System.out.println("Selenium Practice!!!");
+		System.out.println("Selenium Practice!!!--2");
 
 	}
 }
