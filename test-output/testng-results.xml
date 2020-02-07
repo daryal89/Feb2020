@@ -1,79 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="14" passed="14">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name=" Regression Suite" duration-ms="134" started-at="2020-02-06T21:20:06 EST" finished-at="2020-02-06T21:20:06 EST">
+  <suite name="Default suite" duration-ms="24046" started-at="2020-02-06T23:40:16 EST" finished-at="2020-02-06T23:40:40 EST">
     <groups>
     </groups>
-    <test name=" Demo Test" duration-ms="134" started-at="2020-02-06T21:20:06 EST" finished-at="2020-02-06T21:20:06 EST">
-      <class name="com.PracticeFeb2020.Demo1">
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.PracticeFeb2020.Demo1@ed7f8b4]" name="test1" duration-ms="3" started-at="2020-02-06T21:20:06 EST" finished-at="2020-02-06T21:20:06 EST">
+    <test name="Default test" duration-ms="24046" started-at="2020-02-06T23:40:16 EST" finished-at="2020-02-06T23:40:40 EST">
+      <class name="com.PracticeFeb2020.LoginTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.PracticeFeb2020.LoginTest@6f195bc3]" name="setup" is-config="true" duration-ms="10977" started-at="2020-02-06T23:40:16 EST" finished-at="2020-02-06T23:40:27 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- com.PracticeFeb2020.Demo1 -->
-      <class name="com.PracticeFeb2020.Demo6">
-        <test-method status="PASS" signature="test10()[pri:0, instance:com.PracticeFeb2020.Demo6@37883b97]" name="test10" duration-ms="2" started-at="2020-02-06T21:20:06 EST" finished-at="2020-02-06T21:20:06 EST">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="freeCrmTitleTest()[pri:1, instance:com.PracticeFeb2020.LoginTest@6f195bc3]" name="freeCrmTitleTest" duration-ms="299" started-at="2020-02-06T23:40:27 EST" finished-at="2020-02-06T23:40:27 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test10 -->
-        <test-method status="PASS" signature="test11()[pri:0, instance:com.PracticeFeb2020.Demo6@37883b97]" name="test11" duration-ms="2" started-at="2020-02-06T21:20:06 EST" finished-at="2020-02-06T21:20:06 EST">
+        </test-method> <!-- freeCrmTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.PracticeFeb2020.LoginTest@6f195bc3]" name="tearDown" is-config="true" duration-ms="2455" started-at="2020-02-06T23:40:27 EST" finished-at="2020-02-06T23:40:30 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test11 -->
-        <test-method status="PASS" signature="test12()[pri:1, instance:com.PracticeFeb2020.Demo6@37883b97]" name="test12" duration-ms="2" started-at="2020-02-06T21:20:06 EST" finished-at="2020-02-06T21:20:06 EST">
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.PracticeFeb2020.LoginTest@6f195bc3]" name="setup" is-config="true" duration-ms="7526" started-at="2020-02-06T23:40:30 EST" finished-at="2020-02-06T23:40:37 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test12 -->
-        <test-method status="PASS" signature="test13()[pri:2, instance:com.PracticeFeb2020.Demo6@37883b97]" name="test13" duration-ms="2" started-at="2020-02-06T21:20:06 EST" finished-at="2020-02-06T21:20:06 EST">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="freeCRMLogoTest()[pri:2, instance:com.PracticeFeb2020.LoginTest@6f195bc3]" name="freeCRMLogoTest" duration-ms="193" started-at="2020-02-06T23:40:37 EST" finished-at="2020-02-06T23:40:37 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test13 -->
-        <test-method status="PASS" signature="test14()[pri:3, instance:com.PracticeFeb2020.Demo6@37883b97]" name="test14" duration-ms="2" started-at="2020-02-06T21:20:06 EST" depends-on-methods="com.PracticeFeb2020.Demo6.test13, com.PracticeFeb2020.Demo6.test12" finished-at="2020-02-06T21:20:06 EST">
+        </test-method> <!-- freeCRMLogoTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.PracticeFeb2020.LoginTest@6f195bc3]" name="tearDown" is-config="true" duration-ms="2480" started-at="2020-02-06T23:40:37 EST" finished-at="2020-02-06T23:40:40 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test14 -->
-      </class> <!-- com.PracticeFeb2020.Demo6 -->
-      <class name="com.PracticeFeb2020.Demo3">
-        <test-method status="PASS" signature="test3()[pri:0, instance:com.PracticeFeb2020.Demo3@3af9c5b7]" name="test3" duration-ms="36" started-at="2020-02-06T21:20:06 EST" finished-at="2020-02-06T21:20:06 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-      </class> <!-- com.PracticeFeb2020.Demo3 -->
-      <class name="com.PracticeFeb2020.Demo2">
-        <test-method status="PASS" signature="test2()[pri:0, instance:com.PracticeFeb2020.Demo2@37271612]" name="test2" duration-ms="2" started-at="2020-02-06T21:20:06 EST" finished-at="2020-02-06T21:20:06 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-      </class> <!-- com.PracticeFeb2020.Demo2 -->
-      <class name="com.PracticeFeb2020.Demo5">
-        <test-method status="PASS" signature="test5()[pri:0, instance:com.PracticeFeb2020.Demo5@4c309d4d]" name="test5" duration-ms="3" started-at="2020-02-06T21:20:06 EST" finished-at="2020-02-06T21:20:06 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test5 -->
-        <test-method status="PASS" signature="test6()[pri:0, instance:com.PracticeFeb2020.Demo5@4c309d4d]" name="test6" duration-ms="2" started-at="2020-02-06T21:20:06 EST" finished-at="2020-02-06T21:20:06 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test6 -->
-        <test-method status="PASS" signature="test7()[pri:0, instance:com.PracticeFeb2020.Demo5@4c309d4d]" name="test7" duration-ms="5" started-at="2020-02-06T21:20:06 EST" finished-at="2020-02-06T21:20:06 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test7 -->
-        <test-method status="PASS" signature="test8()[pri:0, instance:com.PracticeFeb2020.Demo5@4c309d4d]" name="test8" duration-ms="1" started-at="2020-02-06T21:20:06 EST" finished-at="2020-02-06T21:20:06 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test8 -->
-        <test-method status="PASS" signature="test9()[pri:0, instance:com.PracticeFeb2020.Demo5@4c309d4d]" name="test9" duration-ms="1" started-at="2020-02-06T21:20:06 EST" depends-on-methods="com.PracticeFeb2020.Demo5.test6, com.PracticeFeb2020.Demo5.test7" finished-at="2020-02-06T21:20:06 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test9 -->
-      </class> <!-- com.PracticeFeb2020.Demo5 -->
-      <class name="com.PracticeFeb2020.Demo4">
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.PracticeFeb2020.Demo4@38102d01]" name="test1" duration-ms="2" started-at="2020-02-06T21:20:06 EST" finished-at="2020-02-06T21:20:06 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- com.PracticeFeb2020.Demo4 -->
-    </test> <!--  Demo Test -->
-  </suite> <!--  Regression Suite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.PracticeFeb2020.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

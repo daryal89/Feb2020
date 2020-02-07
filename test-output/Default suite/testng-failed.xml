@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.PracticeFeb2020.Demo6">
+      <class name="com.PracticeFeb2020.LoginTest">
         <methods>
-          <include name="test12"/>
-          <include name="test14"/>
-          <include name="test13"/>
+          <include name="setup"/>
+          <include name="freeCrmTitleTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.PracticeFeb2020.Demo6 -->
+      </class> <!-- com.PracticeFeb2020.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

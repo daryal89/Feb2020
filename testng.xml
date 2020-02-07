@@ -15,6 +15,7 @@
 			<class name="com.PracticeFeb2020.Demo5" />
 			<class name="com.PracticeFeb2020.Demo4" />
 			<class name="com.PracticeFeb2020.Demo6" />
+			<class name="com.PracticeFeb2020.LoginTest" />
 		</classes>
 	</test>
 </suite> 
