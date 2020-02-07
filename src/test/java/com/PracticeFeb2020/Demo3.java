@@ -5,7 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
 public class Demo3 {
-	private static Logger log = LogManager.getLogger(Demo5.class.getName());
+	private static Logger log = LogManager.getLogger(Demo3.class.getName());
 
 	@Test
 	public void test3(){

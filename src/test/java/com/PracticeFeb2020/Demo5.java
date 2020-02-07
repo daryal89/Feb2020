@@ -33,14 +33,14 @@ public class Demo5 {
 	@Test
 	public void test8() {
 		log.info("Test--8");
-		System.out.println("Cucumber Practice!!!---7");
+		System.out.println("API Practice!!!---7");
 		Assert.assertTrue(true);// passed test
 	}
 
 	@Test(dependsOnMethods = { "test7", "test6" })
 	public void test9() {
 		log.info("Test--9");
-		System.out.println("Cucumber Practice!!!---7");
+		System.out.println("NTT data Practice!!!---7");
 		Assert.assertFalse(false);
 
 	}

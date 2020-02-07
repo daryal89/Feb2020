@@ -6,7 +6,7 @@ Set of Api , utilities development environment, and set of rules that helps achi
 Architecutre of the Framework: parts
 TestRunner: Responsible for categorizing and running your tests
 DataProvider:Responsible for getting your run and Test data
-Twor parts
+Two parts
 TestData:
 RunConfiguration: The basic set of information to start your test
 Reporter: To provide reporting structure, Log4j
