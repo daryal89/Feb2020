@@ -2,30 +2,30 @@
 <testng-results skipped="1" failed="1" ignored="0" total="14" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="167" started-at="2020-02-06T19:52:50 EST" finished-at="2020-02-06T19:52:50 EST">
+  <suite name=" Regression Suite" duration-ms="134" started-at="2020-02-06T19:56:31 EST" finished-at="2020-02-06T19:56:31 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="167" started-at="2020-02-06T19:52:50 EST" finished-at="2020-02-06T19:52:50 EST">
+    <test name=" Demo Test" duration-ms="134" started-at="2020-02-06T19:56:31 EST" finished-at="2020-02-06T19:56:31 EST">
       <class name="com.PracticeFeb2020.Demo1">
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.PracticeFeb2020.Demo1@4c12331b]" name="test1" duration-ms="28" started-at="2020-02-06T19:52:50 EST" finished-at="2020-02-06T19:52:50 EST">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.PracticeFeb2020.Demo1@6025e1b6]" name="test1" duration-ms="1" started-at="2020-02-06T19:56:31 EST" finished-at="2020-02-06T19:56:31 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
       </class> <!-- com.PracticeFeb2020.Demo1 -->
       <class name="com.PracticeFeb2020.Demo6">
-        <test-method status="PASS" signature="test10()[pri:0, instance:com.PracticeFeb2020.Demo6@7586beff]" name="test10" duration-ms="5" started-at="2020-02-06T19:52:50 EST" finished-at="2020-02-06T19:52:50 EST">
+        <test-method status="PASS" signature="test10()[pri:0, instance:com.PracticeFeb2020.Demo6@4c402120]" name="test10" duration-ms="5" started-at="2020-02-06T19:56:31 EST" finished-at="2020-02-06T19:56:31 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test10 -->
-        <test-method status="PASS" signature="test11()[pri:0, instance:com.PracticeFeb2020.Demo6@7586beff]" name="test11" duration-ms="3" started-at="2020-02-06T19:52:50 EST" finished-at="2020-02-06T19:52:50 EST">
+        <test-method status="PASS" signature="test11()[pri:0, instance:com.PracticeFeb2020.Demo6@4c402120]" name="test11" duration-ms="1" started-at="2020-02-06T19:56:31 EST" finished-at="2020-02-06T19:56:31 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test11 -->
-        <test-method status="PASS" signature="test12()[pri:1, instance:com.PracticeFeb2020.Demo6@7586beff]" name="test12" duration-ms="5" started-at="2020-02-06T19:52:50 EST" finished-at="2020-02-06T19:52:50 EST">
+        <test-method status="PASS" signature="test12()[pri:1, instance:com.PracticeFeb2020.Demo6@4c402120]" name="test12" duration-ms="1" started-at="2020-02-06T19:56:31 EST" finished-at="2020-02-06T19:56:31 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test12 -->
-        <test-method status="FAIL" signature="test13()[pri:2, instance:com.PracticeFeb2020.Demo6@7586beff]" name="test13" duration-ms="3" started-at="2020-02-06T19:52:50 EST" finished-at="2020-02-06T19:52:50 EST">
+        <test-method status="FAIL" signature="test13()[pri:2, instance:com.PracticeFeb2020.Demo6@4c402120]" name="test13" duration-ms="3" started-at="2020-02-06T19:56:31 EST" finished-at="2020-02-06T19:56:31 EST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[did not expect to find [true] but found [false]]]>
@@ -71,13 +71,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test13 -->
-        <test-method status="SKIP" signature="test14()[pri:3, instance:com.PracticeFeb2020.Demo6@7586beff]" name="test14" duration-ms="0" started-at="2020-02-06T19:52:50 EST" depends-on-methods="com.PracticeFeb2020.Demo6.test13, com.PracticeFeb2020.Demo6.test12" finished-at="2020-02-06T19:52:50 EST">
+        <test-method status="SKIP" signature="test14()[pri:3, instance:com.PracticeFeb2020.Demo6@4c402120]" name="test14" duration-ms="0" started-at="2020-02-06T19:56:31 EST" depends-on-methods="com.PracticeFeb2020.Demo6.test13, com.PracticeFeb2020.Demo6.test12" finished-at="2020-02-06T19:56:31 EST">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method Demo6.test14()[pri:3, instance:com.PracticeFeb2020.Demo6@7586beff] depends on not successfully finished methods]]>
+              <![CDATA[Method Demo6.test14()[pri:3, instance:com.PracticeFeb2020.Demo6@4c402120] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Demo6.test14()[pri:3, instance:com.PracticeFeb2020.Demo6@7586beff] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method Demo6.test14()[pri:3, instance:com.PracticeFeb2020.Demo6@4c402120] depends on not successfully finished methods
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -105,45 +105,45 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- test14 -->
       </class> <!-- com.PracticeFeb2020.Demo6 -->
       <class name="com.PracticeFeb2020.Demo3">
-        <test-method status="PASS" signature="test3()[pri:0, instance:com.PracticeFeb2020.Demo3@3b69e7d1]" name="test3" duration-ms="3" started-at="2020-02-06T19:52:50 EST" finished-at="2020-02-06T19:52:50 EST">
+        <test-method status="PASS" signature="test3()[pri:0, instance:com.PracticeFeb2020.Demo3@6a6cb05c]" name="test3" duration-ms="18" started-at="2020-02-06T19:56:31 EST" finished-at="2020-02-06T19:56:31 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
       </class> <!-- com.PracticeFeb2020.Demo3 -->
       <class name="com.PracticeFeb2020.Demo2">
-        <test-method status="PASS" signature="test2()[pri:0, instance:com.PracticeFeb2020.Demo2@815b41f]" name="test2" duration-ms="2" started-at="2020-02-06T19:52:50 EST" finished-at="2020-02-06T19:52:50 EST">
+        <test-method status="PASS" signature="test2()[pri:0, instance:com.PracticeFeb2020.Demo2@40a4337a]" name="test2" duration-ms="2" started-at="2020-02-06T19:56:31 EST" finished-at="2020-02-06T19:56:31 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
       </class> <!-- com.PracticeFeb2020.Demo2 -->
       <class name="com.PracticeFeb2020.Demo5">
-        <test-method status="PASS" signature="test5()[pri:0, instance:com.PracticeFeb2020.Demo5@5542c4ed]" name="test5" duration-ms="2" started-at="2020-02-06T19:52:50 EST" finished-at="2020-02-06T19:52:50 EST">
+        <test-method status="PASS" signature="test5()[pri:0, instance:com.PracticeFeb2020.Demo5@22ff4249]" name="test5" duration-ms="2" started-at="2020-02-06T19:56:31 EST" finished-at="2020-02-06T19:56:31 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test5 -->
-        <test-method status="PASS" signature="test6()[pri:0, instance:com.PracticeFeb2020.Demo5@5542c4ed]" name="test6" duration-ms="2" started-at="2020-02-06T19:52:50 EST" finished-at="2020-02-06T19:52:50 EST">
+        <test-method status="PASS" signature="test6()[pri:0, instance:com.PracticeFeb2020.Demo5@22ff4249]" name="test6" duration-ms="2" started-at="2020-02-06T19:56:31 EST" finished-at="2020-02-06T19:56:31 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test6 -->
-        <test-method status="PASS" signature="test7()[pri:0, instance:com.PracticeFeb2020.Demo5@5542c4ed]" name="test7" duration-ms="2" started-at="2020-02-06T19:52:50 EST" finished-at="2020-02-06T19:52:50 EST">
+        <test-method status="PASS" signature="test7()[pri:0, instance:com.PracticeFeb2020.Demo5@22ff4249]" name="test7" duration-ms="6" started-at="2020-02-06T19:56:31 EST" finished-at="2020-02-06T19:56:31 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test7 -->
-        <test-method status="PASS" signature="test8()[pri:0, instance:com.PracticeFeb2020.Demo5@5542c4ed]" name="test8" duration-ms="1" started-at="2020-02-06T19:52:50 EST" finished-at="2020-02-06T19:52:50 EST">
+        <test-method status="PASS" signature="test8()[pri:0, instance:com.PracticeFeb2020.Demo5@22ff4249]" name="test8" duration-ms="2" started-at="2020-02-06T19:56:31 EST" finished-at="2020-02-06T19:56:31 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test8 -->
-        <test-method status="PASS" signature="test9()[pri:0, instance:com.PracticeFeb2020.Demo5@5542c4ed]" name="test9" duration-ms="2" started-at="2020-02-06T19:52:50 EST" depends-on-methods="com.PracticeFeb2020.Demo5.test6, com.PracticeFeb2020.Demo5.test7" finished-at="2020-02-06T19:52:50 EST">
+        <test-method status="PASS" signature="test9()[pri:0, instance:com.PracticeFeb2020.Demo5@22ff4249]" name="test9" duration-ms="2" started-at="2020-02-06T19:56:31 EST" depends-on-methods="com.PracticeFeb2020.Demo5.test6, com.PracticeFeb2020.Demo5.test7" finished-at="2020-02-06T19:56:31 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test9 -->
       </class> <!-- com.PracticeFeb2020.Demo5 -->
       <class name="com.PracticeFeb2020.Demo4">
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.PracticeFeb2020.Demo4@1573f9fc]" name="test1" duration-ms="1" started-at="2020-02-06T19:52:50 EST" finished-at="2020-02-06T19:52:50 EST">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.PracticeFeb2020.Demo4@2d1ef81a]" name="test1" duration-ms="3" started-at="2020-02-06T19:56:31 EST" finished-at="2020-02-06T19:56:31 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
       </class> <!-- com.PracticeFeb2020.Demo4 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!--  Demo Test -->
+  </suite> <!--  Regression Suite -->
 </testng-results>

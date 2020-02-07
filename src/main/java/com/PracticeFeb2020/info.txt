@@ -1,0 +1,459 @@
+Selenium methods
+Framework is a supporting structure to achieve a particular task.
+
+Set of Api , utilities development environment, and set of rules that helps achieve a particular task in full efficiency.
+
+Architecutre of the Framework: parts
+TestRunner: Responsible for categorizing and running your tests
+DataProvider:Responsible for getting your run and Test data
+Twor parts
+TestData:
+RunConfiguration: The basic set of information to start your test
+Reporter: To provide reporting structure, Log4j
+Utilities: set of common utility functions
+PageObjects: To group together your application UI pages
+
+Basic framework design
+Test Runner (TestNG)
+Run DataProvider
+Tests
+Test DataProvider
+Logger
+Reporter
+
+
+Test Runner Component:  Where the tests are and how the tests are catagorized
+Responsible for running and categorizing your tests based on the run request.
+
+
+Run DataProvider Component:
+Run data is the initial set of data tha is required by your framework to start the tests 
+    - List of browsers to run tests on
+Different timeouts
+Environment details and more
+
+Test DataProvider Component:
+Test Data Provider is the component that will deliver data to your tests. The data can come from an XML, Excel or even a text file.
+
+Logger component:
+Logging is an essential part of your framework. Without logging we won’t know what has happened during a test run. results are also logged using this component of the framework.
+
+Reporter component:
+Reporters are responsible for sending out reports after the test is done. This component is responsible to generate reports based on the needs. For eg an HTML Report or a diagrammatic report. 
+
+Project overview
+
+Demoqa.com
+Store.demoqa.com
+
+-Registration
+-Login 
+-Search Products
+-Add to care
+-Buy products
+
+
+Register a new user
+-Verify registration using invalid details
+
+Scenarios overview (Login)
+
+Broad category of scenarios in Login is
+-Login using valid username and password
+-Login using invalid username and password
+
+Search Product
+
+-Search a valid product
+-search an invalid product
+
+Buy product
+-Add a  product to cart
+-Add multiple products to cart
+-Verify the checkout cart
+
+---------------------------------------------------------------------------------------------------
+Start Test: Sends a Run Request
+Get Run configuration:  browser, environment details, timeouts, test types(login, buy, registration etc), prerequisites.
+
+Get Tests:(login id, expected results, product id, by the test to run successfully called test data) Pull the rests based on the request
+Run tests: Runs test
+Report results: Analyze logs reports out of it.
+Stop/Wait for execution Request: It will go in idle state and wait for new request
+
+
+Designing DataProvider
+FrameWrok Configrations
+-ListOfBrowsers
+-PageLoadTimeOut
+-ImplictWait
+-ScreenshotOnFailure
+-HighlightElementBeforeAction
+-IEServerPath
+-ChromeServerPath
+---------------------------------------------------------------------------------------------------------------------------
+
+
+Naveen Java videos(paid):
+
+JDK:Used to design and execution 
+JRE: only for execution
+Java form jan 2019 onwards there is paid 
+Oracle is owner of java
+Java -version   to check java version in cmd
+2. Eclipse Editor: write and execute the code by help of editor
+Eclipse IDE for java developers
+Eclipse is in the form of set up files.
+Don't mismatch JDK and Eclipse compatibility version
+Maven Eclipse Integration plugin
+
+Creating a project in Eclipse
+File → New File→ javaProject→ give name of the project
+jar→ java archive files (bundle some of the files classes)
+Src → source code
+package→ is like a folder
+
+java.lang.IndexOutOfBoundsException --  if the index of arrayList is not in bound.
+
+ArrayList ar = new ArrayList ();
+Default virtual(Default capacity or virtual capacity) size of the ArrayList is: 10 (0-9)
+
+Physical capacity: data entered inside the arraylist
+
+Virtual Capacity = 10- Physical capacity
+
+After entering 10 values, arraylist will create another 10 virtual capacity.
+When virtual capacity is created, no actual location is there.
+Memory allocation is done when there is physical capacity  is present.
+ar.size(0) will always count the physical capacity.
+
+Raw type can contain any type of data in arrayList
+
+ArrayList<String> [] names = new ArrayList<Strings>(); 
+This is called generics arraylist, it will contain the data type in ArrayList.
+
+===========================================================
+Java Session_7
+
+Functions in java:
+Class methods - Class properties
+
+Main method is static in nature and object cannot hold static method or static variables.
+Object can held only non static method or variables.
+-You can create multiple objects of a class.
+-Classmethod and class variables each separate copy will be given to each object.
+
+Three types of methods 
+
+No input and no return method:
+public void test() {
+	System.out.println("test method");
+	}
+
+No input and some output method
+
+Some input and some output method
+
+
+In selenium creating a function is an art. You should know  how to read and write the function.
+With function signature you  can tell what is the return type of the function.
+
+Class data members (methods and functions) are properties of a class.
+
+========================================================
+Static Concepts video:8
+
+Object cannot hold the static methods and static variables.
+Static methods and static variables are stored inside the stack memory (common memory allocation).
+
+How to call static stuff:
+Use them directly
+Age =25;
+System.out.println(age);
+
+2. Call by class name:
+StaticAndNonstaticConcept.age=30;
+System.out.println(StaticAndNonStaticConcept.age);
+StaticAndNonStaticConcept.getName();
+
+
+//How to call non static stuff: Create the object
+Obj.name =”Tom”;
+
+Garbage collector always comes inside the heap memory and will destroy objects that have no reference or null reference. 
+Main method is called by JVM directly so it is static in nature. 
+
+Heap memory section is for Objects.
+Stack memory is for constant memory. Stack or static memory all the static methods and variable will be there. These are the common properties and will be stored inside the stack memory.
+
+Photocopy of each non static methods and variables photo copies will be created and will be provided to all the objects.
+
+Main method will be stored inside the common memory allocation area (static area) inside the stack memory.
+
+Main method is not part of the object it is part of the class.
+
+============================================================
+Java Video :9 Static concept
+
+Method Overloading: Same method name in a class but with different method signature, parameters or data types method overloading happens.
+public void login() {
+		
+	}
+	
+	public static void login(int otp) {
+		
+	}
+
+These are the two different methods and it will not have method overloading because the first method the memory allocation will happen inside the heap memory whereas for second case memory allocation will happen in stack memory.
+
+You can call different main class from different classes.
+Constructor name should always be the className
+Constructor do not have return type. Cannot return anything.
+Constructor is used to define your class variable.
+
+I can use static variable inside the constructor. but a static variable will be stored inside the stack memory.
+Constructor can never be static. 
+------------------------------------------------------------------------------------------------------------------------
+
+Video 11: Encapsulation
+Use to encapsulate data members
+Encapsulation means to create a capsule. Data variable and data methods.
+Private Data variables  can be access through the help of public data methods. Write the implementation inside data methods 
+Hiding the internal implementation hiding the data members(variables and methods).
+Don’t want to expose internal implementation.
+
+First you set it and get it (getter and setters methods)
+
+------------------------------------------------------------------------------------------------------------------
+Inheritance: parent child relationship
+Compile time: All syntactical errors will be checked
+
+Runtime: Execution will happen in runtime
+
+Polymorphism ---> method overriding and method overriding
+
+Overloading happens within the same class and called compile time polymorphism or method overloading.
+Overriding happens between the child and parent class. At runtime it will be decided which method to be called on runtime polymorphism.
+At runtime JVM decides which methods to take.
+
+Car c1=new BMW();// All the bmw are car. child class object can be referred by parent class ref variable
+
+
+Reference signature type checking will block you to call child class method through parent class reference variable.  Car c1=new BMW();  // Top casting in java
+WebDriver driver = new ChromeDriver(); // Top casting in java
+
+//downcasting in java:   you cannot say that all cars are BMW. We never use downcasting 
+BMW b1 = new Car(); // we can’t put big box inside the small box. If you want to make it shrinking then
+BMW b1 = (BMW) new Car(); // compile time it will be ok, but at runtime you will get ClassCastException.
+
+Top casting -- allowed
+Down casting:  at compile time you will get ok but at runtime ClassCastException
+
+Static method can be overload.
+Can I override static method?  
+Static method cannot be overridden.
+Final methods can not be overridden.
+Final class can not have child class. Parent class cannot be a final class.
+
+Diamond problem in java: multiple inheritance in the form of class is not allowed.
+===================================================================
+Video:13  interface
+Interface is used to achieve 100% abstraction
+
+// no method body -- 100% abstraction
+	// only method declaration/method prototype
+	// no static methods for prototype methods in interface -- static methods cannot be overridden.
+	// but Interface variables are static and final in nature by default.
+	// cannot create the object of interface
+	// you cannot create the object of interface
+	// you cannot have constructor of interface
+	// After jdk 1.8: 1. We can have method body with default method in interface
+	// 2.can have static methods in interface after 1.8
+	//private methods  are not allowed inside interface
+
+===================================================
+Video: 14 Abstract classes
+// abstract classes we can have abstract and non abstract methods
+	//Can create constructor of abstract class it will be called when you create the child class object.
+	//cannot create object of abstract class 
+	//abs class constructor can be called, but it will be called with child class object creation.
+
+
+=======================================================================
+Video:16 
+toString(): String representation of Object. You have to over ride toString() method form the Object class.
+To Print the Object in the form of String representation you have to override toString() method from object class.
+
+@Override
+	public String toString() {
+		return "Training [name=" + name + ", courseName=" + courseName + ", time=" + time + "]";
+	}
+
+Memory address will be returned if only object created and called it.
+
+//JVM will throw an exception with the help of:
+		//1. It will create the object of Exception class
+		//2. It  will print the exception info with the help of stack trace and exception handler
+
+We cannot write try block without catch block
+We can write try block with multiple catch blocks.
+
+Throws: Throws keyword is used to bypass exception from one method to another method. If we use throws keyword in our methods and in final if the main method also throws the exception then the exception will be handled by JVM and will say what kind of exception is it. If we want to handle the exception within the method then we need to use try catch in that method. Throws keyword doesn’t provide any custom reporting or reporting of exception handling. We do not use throws keyword in our framework. We use throws keyword with method signature.
+
+Throw: If we want to generate our own custom exception then we use throw keyword. We use throw keyword inside the method body and we will create  object of new exception like
+Throw new Exception(“Message of the exception”). We will handle exception using try catch block  with it.
+
+Finally: finally block will be executed even the exception occured or not inside the program.
+
+====================================================================
+
+Reporting In Framework:
+To generate Extent Report Using TestNG, we need to do following tasks
+Add the ExtentReport dependency in pom.xml file. The dependency file is:
+
+<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+<dependency>
+    <groupId>com.relevantcodes</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>2.41.2</version>
+</dependency>
+
+Create one ExtentReportListener class in src/main/java so that it will listen each and every testcase activity.
+-ExtentReporter is completely dependent on TestNG. So you need testNG Listener that implements IReporter interface.
+--------------------------------------------------------------
+package com.extentReportListener;
+
+import java.io.File;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
+
+import org.testng.IReporter;
+import org.testng.IResultMap;
+import org.testng.ISuite;
+import org.testng.ISuiteResult;
+import org.testng.ITestContext;
+import org.testng.ITestResult;
+import org.testng.xml.XmlSuite;
+
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
+public class ExtentReportListener implements IReporter {
+	private ExtentReports extent;
+
+	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
+			String outputDirectory) {
+		extent = new ExtentReports(outputDirectory + File.separator
+				+ "Extent.html", true);
+
+		for (ISuite suite : suites) {
+			Map<String, ISuiteResult> result = suite.getResults();
+
+			for (ISuiteResult r : result.values()) {
+				ITestContext context = r.getTestContext();
+
+				buildTestNodes(context.getPassedTests(), LogStatus.PASS);
+				buildTestNodes(context.getFailedTests(), LogStatus.FAIL);
+				buildTestNodes(context.getSkippedTests(), LogStatus.SKIP);
+			}
+		}
+
+		extent.flush();
+		extent.close();
+	}
+
+	private void buildTestNodes(IResultMap tests, LogStatus status) {
+		ExtentTest test;
+
+		if (tests.size() > 0) {
+			for (ITestResult result : tests.getAllResults()) {
+				test = extent.startTest(result.getMethod().getMethodName());
+
+				test.setStartedTime(getTime(result.getStartMillis()));
+				test.setEndedTime(getTime(result.getEndMillis()));
+
+				for (String group : result.getMethod().getGroups())
+					test.assignCategory(group);
+
+				if (result.getThrowable() != null) {
+					test.log(status, result.getThrowable());
+				} else {
+					test.log(status, "Test " + status.toString().toLowerCase()
+							+ "ed");
+				}
+
+				extent.endTest(test);
+			}
+		}
+	}
+
+	private Date getTime(long millis) {
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTimeInMillis(millis);
+		return calendar.getTime();
+	}
+}
+------------------------------------------------------------------------------------------------
+Add the listener class in testng.xml file  between suite and test tags like
+
+<suite name=" Regression Suite">
+
+	<listeners>
+		<listener
+			class-name="com.extentReportListener.ExtentReportListener" />
+	</listeners>
+
+	<test  name=" Demo Test">
+		<classes>
+			<class name="com.PracticeFeb2020.Demo3" />
+			<class name="com.PracticeFeb2020.Demo2" />
+			<class name="com.PracticeFeb2020.Demo1" />
+			<class name="com.PracticeFeb2020.Demo5" />
+			<class name="com.PracticeFeb2020.Demo4" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite →
+-----------------------------------------------------------------------------------------------------------
+
+If you execute your testNG.xml file and refresh the project then 
+Copy the path of Extent.html and paste in browser it will show you the ExtentReport
+It has two theme, 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+	
+
+
+
+
+
+
+
+
+

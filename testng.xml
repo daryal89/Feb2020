@@ -7,13 +7,14 @@
 			class-name="com.extentReportListener.ExtentReportListener" />
 	</listeners>
 
-	<test  name=" Demo Test">
+	<test name=" Demo Test">
 		<classes>
 			<class name="com.PracticeFeb2020.Demo3" />
 			<class name="com.PracticeFeb2020.Demo2" />
 			<class name="com.PracticeFeb2020.Demo1" />
 			<class name="com.PracticeFeb2020.Demo5" />
 			<class name="com.PracticeFeb2020.Demo4" />
+			<class name="com.PracticeFeb2020.Demo6" />
 		</classes>
-	</test> <!-- Test -->
-</suite> <!-- Suite -->
+	</test>
+</suite> 
